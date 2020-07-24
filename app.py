@@ -2,11 +2,12 @@ from flask import Flask, render_template, redirect
 import scrape_mars
 from flask_pymongo import PyMongo
 
+#flask
 app = Flask(__name__)
 
 
 # Use PyMongo to establish Mongo connection
-mongo = PyMongo(app, uri="mongodb://localhost:5000/mars_app")
+mongo = PyMongo(app, uri="mongodb://127.0.0.1:5000/mars_app")
 
 
 # Route to render index.html template using data from Mongo

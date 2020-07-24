@@ -17,8 +17,8 @@
         </div>
 
         <h2>Latest Mars News</h2>
-        <h3><strong>{{ mars.news_title }}</strong></h3>
-        <h3>{{ mars.news_p}}</h3>
+        <h3><strong>{{ mars.mars_new_title }}</strong></h3>
+        <h3>{{ mars.mars_paragraph}}</h3>
         <h2>Featured Mars image</h2>
         <img src={{ mars.mars_image }} width="400" height="400" alt="Mars">
 
@@ -29,6 +29,8 @@
         <div>
             <br>
             <img src="{{ img }}" width="400" height="400" alt="Mars">
+
+
         </div>
         {% endfor %}
     </div>
